@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Sudoku</h1>
+
+<div id="settings">
+    <label>Boyut</label>
+    <select id="size">
+        <option value="6">6 x 6</option>
+        <option value="9">9 x 9</option>
+    </select>
+
+    <label>Hücre Boyutu</label>
+    <select id="cellSize">
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60" selected>60</option>
+        <option value="70">70</option>
+    </select>
+
+    <label>Zorluk</label>
+    <select id="difficulty">
+        <option>Kolay</option>
+        <option selected>Orta</option>
+        <option>Zor</option>
+    </select>
+
+    <button onclick="startGame()">Başlat</button>
+</div>
+
+<div id="game"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

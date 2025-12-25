@@ -1,0 +1,92 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#settings {
+    margin-top: 30px;
+}
+
+#settings label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game {
+    margin: 30px auto;
+    display: inline-block;
+    padding: 5px;
+    background: black;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.fixed {
+    background: #e6e6e6;
+}
+
+.valid {
+    background: #ccffcc !important;
+}
+
+.invalid {
+    background: #f28b82 !important;
+}
+
+/* ======================= */
+/*      6x6 (2x3)          */
+/* ======================= */
+
+.sudoku-6 .cell:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+.sudoku-6 .row:nth-child(2n) .cell {
+    border-bottom: 3px solid black;
+}
+
+.sudoku-6 .row:first-child .cell {
+    border-top: 3px solid black;
+}
+
+.sudoku-6 .cell:first-child {
+    border-left: 3px solid black;
+}
+
+/* ======================= */
+/*      9x9 (3x3)          */
+/* ======================= */
+
+.sudoku-9 .cell:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+.sudoku-9 .row:nth-child(3n) .cell {
+    border-bottom: 3px solid black;
+}
+
+.sudoku-9 .row:first-child .cell {
+    border-top: 3px solid black;
+}
+
+.sudoku-9 .cell:first-child {
+    border-left: 3px solid black;
+}
